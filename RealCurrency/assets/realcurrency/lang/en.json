@@ -1,5 +1,6 @@
 {
   "currencies": "Currencies: {0}",
   "Choose currency": "Choose currency",
-  "uah": "{p0:none|# hryvnia|# hryvnias}"
+  "uah": "{p0:none|# hryvnia|# hryvnias}",
+  "usd": "{p0:none|# dollar|# dollars}"
 }

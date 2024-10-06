@@ -14,3 +14,13 @@
 - 200: [Front](https://commons.wikimedia.org/wiki/File:200-uah-2020-1.png), [Rear](https://commons.wikimedia.org/wiki/File:200-uah-2020-2.png)
 - 500: [Front](https://commons.wikimedia.org/wiki/File:500_гривень_2015_року_(новий_зразок)_аверс.jpg), [Rear](https://commons.wikimedia.org/wiki/File:500_гривень_2015_року_(новий_зразок)_реверс.jpg)
 - 1000: [Front](https://commons.wikimedia.org/wiki/File:1000_гривень_2019_аверс.jpg), [Rear](https://commons.wikimedia.org/wiki/File:1000_гривень_2019_реверс.jpg)
+
+### 
+
+- 1: [Front](https://commons.wikimedia.org/wiki/File:US_one_dollar_bill,_obverse,_series_2009.jpg), [Rear](https://commons.wikimedia.org/wiki/File:US_one_dollar_bill,_reverse,_series_2009.jpg)
+- 2: [Front](https://commons.wikimedia.org/wiki/File:US_$2_obverse.jpg), [Rear](https://commons.wikimedia.org/wiki/File:US_$2_reverse.jpg)
+- 5: [Front](https://commons.wikimedia.org/wiki/File:US_$5_Series_2006_obverse.jpg), [Rear](https://commons.wikimedia.org/wiki/File:US_$5_Series_2006_reverse.jpg)
+- 10: [Front](https://commons.wikimedia.org/wiki/File:US10dollarbill-Series_2004A.jpg), [Rear](https://commons.wikimedia.org/wiki/File:US_$10_Series_2004_reverse.jpg)
+- 20: [Front](https://commons.wikimedia.org/wiki/File:US20-front.jpg), [Rear](https://commons.wikimedia.org/wiki/File:US20-back.jpg)
+- 50: [Front](https://commons.wikimedia.org/wiki/File:50_USD_Series_2004_Note_Front.jpg), [Rear](https://commons.wikimedia.org/wiki/File:50_USD_Series_2004_Note_Back.jpg)
+- 100: [Front](https://commons.wikimedia.org/wiki/File:Obverse_of_the_series_2009_$100_Federal_Reserve_Note.jpg), [Rear](https://commons.wikimedia.org/wiki/File:New100back.jpg)
