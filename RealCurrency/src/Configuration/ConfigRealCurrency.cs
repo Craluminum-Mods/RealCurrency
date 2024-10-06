@@ -22,6 +22,10 @@ public class ConfigRealCurrency : IModConfig
         }
 
         Currencies = GetCurrenciesAsString();
-        Currency ??= Core.Currencies.First().Key;
+
+        if (string.IsNullOrEmpty(Currency) || !Core.Currencies.ContainsKey(Currency))
+        {
+            Currency = Core.Currencies.First().Key;
+        }
     }
 }
