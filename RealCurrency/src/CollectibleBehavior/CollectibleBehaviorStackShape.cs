@@ -12,6 +12,9 @@ namespace RealCurrency;
 
 public class CollectibleBehaviorStackShape : CollectibleBehavior, IContainedMeshSource
 {
+    private static string Currency => Core.ConfigRealCurrency.Currency;
+    private static int[] Denominations => Currencies.GetValueSafe(Core.ConfigRealCurrency.Currency);
+
     public CollectibleBehaviorStackShape(CollectibleObject collObj) : base(collObj){}
 
     public override void GetHeldItemName(StringBuilder sb, ItemStack itemStack)
@@ -55,12 +58,12 @@ public class CollectibleBehaviorStackShape : CollectibleBehavior, IContainedMesh
         int i = 0;
         while (stacksize > 0)
         {
-            int count = stacksize / CurrencyDenominations[i];
+            int count = stacksize / Denominations[i];
             for (int j = 0; j < count; j++)
             {
-                mesh.AddMeshData(GenBanknoteMesh(CurrencyDenominations[i].ToString(), ref rotation, ref height), 0, 0, height);
+                mesh.AddMeshData(GenBanknoteMesh(Denominations[i].ToString(), ref rotation, ref height), 0, 0, height);
             }
-            stacksize %= CurrencyDenominations[i];
+            stacksize %= Denominations[i];
             i++;
         }
 

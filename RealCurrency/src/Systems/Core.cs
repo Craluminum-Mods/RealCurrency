@@ -1,5 +1,4 @@
 ﻿global using static RealCurrency.Core;
-using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +13,12 @@ public class Core : ModSystem
 {
     public const string ModID = "realcurrency";
 
+    public static ConfigRealCurrency ConfigRealCurrency { get; set; }
+
     public static Dictionary<EnumItemRenderTarget, ModelTransform> Transformations { get; protected set; } = new();
     public static Dictionary<string, int[]> Currencies { get; protected set; } = new();
 
-    public static ConfigRealCurrency ConfigRealCurrency { get; protected set; }
-
-    public static string Currency => ConfigRealCurrency.Currency;
-    public static int[] CurrencyDenominations => Currencies.GetValueSafe(Currency);
+    public static string GetCurrenciesAsString() => string.Join(", ", Currencies.Keys);
 
     public override bool ShouldLoad(EnumAppSide forSide) => forSide.IsClient();
 
@@ -32,7 +30,12 @@ public class Core : ModSystem
 
     public override void AssetsFinalize(ICoreAPI api)
     {
-        ConfigRealCurrency = ModConfig.ReadConfig<ConfigRealCurrency>(api, $"RealCurrency-{api.Side}.json");
+        ConfigRealCurrency = ModConfig.ReadConfig<ConfigRealCurrency>(api, ConfigRealCurrency.Path);
+
+        if (api.ModLoader.IsModEnabled("configlib"))
+        {
+            _ = new ConfigLibCompatibility(api);
+        }
 
         foreach (CollectibleObject obj in api.World.Collectibles)
         {

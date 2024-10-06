@@ -6,6 +6,8 @@ namespace RealCurrency;
 
 public class ConfigRealCurrency : IModConfig
 {
+    public const string Path = "RealCurrency-Client.json";
+
     [JsonProperty(Order = 1)]
     public string Currencies;
 
@@ -19,7 +21,7 @@ public class ConfigRealCurrency : IModConfig
             Currency = previousConfig.Currency;
         }
 
-        Currencies = string.Join(", ", Core.Currencies.Keys);
+        Currencies = GetCurrenciesAsString();
         Currency ??= Core.Currencies.First().Key;
     }
 }
