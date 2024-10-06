@@ -1,4 +1,5 @@
 ﻿global using static RealCurrency.Core;
+using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace RealCurrency;
 
 public class Core : ModSystem
 {
+    private Harmony HarmonyInstance => new Harmony(Mod.Info.ModID);
+
     public const string ModID = "realcurrency";
 
     public static ConfigRealCurrency ConfigRealCurrency { get; set; }
@@ -25,6 +28,9 @@ public class Core : ModSystem
     public override void Start(ICoreAPI api)
     {
         api.RegisterCollectibleBehaviorClass("RealCurrency.StackShape", typeof(CollectibleBehaviorStackShape));
+
+        HarmonyInstance.PatchAll();
+
         api.Logger.Event("started '{0}' mod", Mod.Info.Name);
     }
 
@@ -56,5 +62,7 @@ public class Core : ModSystem
     {
         Transformations.Clear();
         Currencies.Clear();
+
+        HarmonyInstance.UnpatchAll(HarmonyInstance.Id);
     }
 }
