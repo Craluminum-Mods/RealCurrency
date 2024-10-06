@@ -28,21 +28,12 @@ public class CollectibleBehaviorStackShape : CollectibleBehavior, IContainedMesh
 
         string key = GetMeshCacheKey(itemstack);
 
-        //MeshData mesh = GenMesh(itemstack, null, null);
-        //renderinfo.ModelRef = capi.Render.UploadMultiTextureMesh(mesh);
-
         if (!meshes.TryGetValue(key, out MultiTextureMeshRef meshref))
         {
             MeshData mesh = GenMesh(itemstack, null, null);
             meshref = meshes[key] = capi.Render.UploadMultiTextureMesh(mesh);
         }
         renderinfo.ModelRef = meshref;
-
-        ModelTransform transform = Transformations.GetValueSafe(target);
-        if (transform != null)
-        {
-            renderinfo.Transform = transform;
-        }
 
         base.OnBeforeRender(capi, itemstack, target, ref renderinfo);
     }

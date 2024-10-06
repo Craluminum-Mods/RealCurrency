@@ -47,6 +47,10 @@ public class Core : ModSystem
         {
             if (obj?.Code != null && obj is ItemRustyGear)
             {
+                obj.GuiTransform = Transformations[EnumItemRenderTarget.Gui];
+                obj.TpHandTransform = Transformations[EnumItemRenderTarget.HandTp];
+                obj.GroundTransform = Transformations[EnumItemRenderTarget.Ground];
+
                 obj.CollectibleBehaviors = obj.CollectibleBehaviors.Append(new CollectibleBehaviorStackShape(obj));
             }
         }
