@@ -1,0 +1,31 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"plain": [16,16],
+		"uah-1-2006-a": [160,80],
+		"uah-1-2006-r": [160,80]
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "banknote",
+			"from": [ 0.0, -0.05, 0.0 ],
+			"to": [ 16.0, 0.05, 8.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"rotationX": 90.0,
+			"faces": {
+				"north": { "texture": "#sides", "uv": [ 0.0, 0.0, 16.0, 0.5 ] },
+				"east": { "texture": "#sides", "uv": [ 0.0, 0.0, 8.0, 0.5 ] },
+				"south": { "texture": "#sides", "uv": [ 0.0, 0.0, 16.0, 0.5 ] },
+				"west": { "texture": "#sides", "uv": [ 0.0, 0.0, 8.0, 0.5 ] },
+				"up": { "texture": "#front", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "autoUv": false },
+				"down": { "texture": "#rear", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "autoUv": false }
+			}
+		}
+	]}

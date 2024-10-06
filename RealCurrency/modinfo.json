@@ -1,0 +1,12 @@
+{
+  "type": "code",
+  "side": "client",
+  "modid": "realcurrency",
+  "name": "Real Currency",
+  "authors": [ "Craluminum2413" ],
+  "description": "Replaces model and textures of rusty gear with real currency",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "1.19.0"
+  }
+}

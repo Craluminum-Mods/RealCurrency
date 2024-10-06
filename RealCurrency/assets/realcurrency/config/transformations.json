@@ -1,0 +1,21 @@
+{
+    "Gui": {
+        "translation": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": 0, "y": -22, "z": -144 },
+        "origin": { "x": 0.5, "y": 0.25, "z": 0.35 },
+        "scaleXyz": { "x": -1.9, "y": 1.9, "z": 1.9 },
+        "rotate": false
+    },
+    "HandTp": {
+        "translation": { "x": -1.4, "y": -0.65, "z": -1 },
+        "rotation": { "x": 135, "y": 0, "z": -75 },
+        "origin": { "x": 0.5, "y": 0.25, "z": 0.5 },
+        "scale": 0.5
+    },
+    "Ground": {
+        "translation": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": -90, "y": 0, "z": 0 },
+        "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+        "scale": 2.5
+    }
+}
