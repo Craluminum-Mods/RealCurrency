@@ -2,7 +2,7 @@
 
 ## Credits
 
-### Ukraine (UAH)
+### UAH (Ukraine)
 
 - 1: [Front](https://commons.wikimedia.org/wiki/File:1_2006_a.jpg), [Rear](https://commons.wikimedia.org/wiki/File:1_2006_r.jpg)
 - 2: [Front](https://commons.wikimedia.org/wiki/File:2_2004_a.jpg), [Rear](https://commons.wikimedia.org/wiki/File:2_2004_r.jpg)
@@ -15,7 +15,7 @@
 - 500: [Front](https://commons.wikimedia.org/wiki/File:500_гривень_2015_року_(новий_зразок)_аверс.jpg), [Rear](https://commons.wikimedia.org/wiki/File:500_гривень_2015_року_(новий_зразок)_реверс.jpg)
 - 1000: [Front](https://commons.wikimedia.org/wiki/File:1000_гривень_2019_аверс.jpg), [Rear](https://commons.wikimedia.org/wiki/File:1000_гривень_2019_реверс.jpg)
 
-### 
+### USD (United States)
 
 - 1: [Front](https://commons.wikimedia.org/wiki/File:US_one_dollar_bill,_obverse,_series_2009.jpg), [Rear](https://commons.wikimedia.org/wiki/File:US_one_dollar_bill,_reverse,_series_2009.jpg)
 - 2: [Front](https://commons.wikimedia.org/wiki/File:US_$2_obverse.jpg), [Rear](https://commons.wikimedia.org/wiki/File:US_$2_reverse.jpg)
