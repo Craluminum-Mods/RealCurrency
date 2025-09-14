@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
 	</PropertyGroup>
@@ -52,14 +52,8 @@
 			<HintPath>../configlib.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
-		<Reference Include="ImGui.NET">
-			<HintPath>../ImGui.NET.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="VSImGui">
-			<HintPath>../VSImGui.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
+
+		<PackageReference Include="VSImGui" Version="0.0.6" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -78,6 +72,10 @@
 		<Content Include="../README.md">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Lib\" />
 	</ItemGroup>
 
 </Project>
